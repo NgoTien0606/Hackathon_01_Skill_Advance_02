@@ -22,6 +22,7 @@ h1 {
     color: white;
     font-size: 40px;
     padding: 20px;
+    text-shadow: 3px 3px 3px black;
 }
 
 header>form {
@@ -63,34 +64,56 @@ main {
     width: 1440px;
     height: 600px;
     background-color: rgb(235, 235, 235);
+    padding-top: 20px;
     margin-top: 100px;
-    position: absolute;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 180px 180px 180px 180px 180px 180px;
-    grid-template-rows: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .danhmucsp {
-    width: 180px;
+    width: 190px;
     height: 350px;
     background-color: white;
-    position: absolute;
+    margin: 10px;
 }
 
 .menu {
-    width: 180px;
+    width: 190px;
     height: 50px;
+    background-color: white;
+    padding: 0;
     border-bottom: 2px solid rgb(235, 235, 235);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
 }
 
-.listsanpham>p {
-    font-size: 12px;
-    padding-left: 30px;
+.menu>img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu>h5 {
+    padding: 0;
+}
+
+.listsanpham {
+    width: 190px;
+    height: 300px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.listsanpham>ul>li {
+    padding: 10px 0px;
+    font-size: 15px;
+    padding-left: 5px;
+    list-style: none;
 }
 
 .sanpham {
-    width: 180px;
+    width: 190px;
     height: 500px;
     background-color: white;
     position: relative;
@@ -98,23 +121,31 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin: 10px;
 }
 
-.sanpham>img {
-    width: 160px;
-    height: 300px;
+.imglink {
+    padding: 10px;
 }
 
-.sanpham>h3 {
-    padding-top: 20px;
+.imglink>a>p {
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
 }
+
+.imglink>a>img {
+    width: 190px;
+    height: 280px;
+}
+
 
 .diachi {
     width: 160px;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding: 10px;
 }
 
 .gia {
@@ -128,7 +159,13 @@ main {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding: 10px;
+}
+
+.soluong>i {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
 }
 
 footer {
@@ -136,8 +173,20 @@ footer {
     height: 200px;
     background-color: rgb(235, 235, 235);
     position: relative;
-    top: 600px;
     border-top: 5px solid rgb(255, 64, 64);
     border-bottom: 5px solid black;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding-left: 100px;
+}
+
+footer>div>h3 {
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+footer>div>p {
+    font-size: 18px;
+    color: gray;
+    line-height: 25px;
 }
