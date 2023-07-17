@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+header {
+    width: 1440px;
+    height: 100px;
+    background: linear-gradient(180deg, red, rgb(255, 94, 0));
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+
+header>form {
+    display: flex;
+    align-items: center;
+}
+
+.boxsearch {
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.boxicon {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.giohang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>p {
+    padding: 15px;
+}
+
+main {
+    width: 1440px;
+    height: 600px;
+    background-color: rgb(235, 235, 235);
+    margin-top: 100px;
+    position: absolute;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 180px 180px 180px 180px 180px 180px;
+    grid-template-rows: auto;
+}
+
+.danhmucsp {
+    width: 180px;
+    height: 350px;
+    background-color: white;
+    position: absolute;
+}
+
+.menu {
+    width: 180px;
+    height: 50px;
+    border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+.listsanpham>p {
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+.sanpham {
+    width: 180px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sanpham>img {
+    width: 160px;
+    height: 300px;
+}
+
+.sanpham>h3 {
+    padding-top: 20px;
+}
+
+.diachi {
+    width: 160px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.gia {
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(255, 64, 64);
+}
+
+.soluong {
+    width: 160px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+footer {
+    width: 1440px;
+    height: 200px;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+    top: 600px;
+    border-top: 5px solid rgb(255, 64, 64);
+    border-bottom: 5px solid black;
+    margin-top: 50px;
+}
