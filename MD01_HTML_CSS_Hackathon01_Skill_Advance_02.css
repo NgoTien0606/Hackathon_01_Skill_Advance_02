@@ -5,13 +5,13 @@
 }
 
 body {
-    width: 1440px;
+    max-width: 1440px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
 }
 
 header {
-    width: 1440px;
+    max-width: 1440px;
     height: 100px;
     background: linear-gradient(180deg, red, rgb(255, 94, 0));
     display: flex;
@@ -61,8 +61,8 @@ header>p {
 }
 
 main {
-    width: 1440px;
-    height: 600px;
+    /* width: 1440px; */
+    /* height: 600px; */
     background-color: rgb(235, 235, 235);
     padding-top: 20px;
     margin-top: 100px;
@@ -141,8 +141,8 @@ main {
 
 
 .diachi {
-    width: 160px;
-    font-size: 18px;
+    width: 190px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -155,7 +155,7 @@ main {
 }
 
 .soluong {
-    width: 160px;
+    width: 190px;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
@@ -169,8 +169,8 @@ main {
 }
 
 footer {
-    width: 1440px;
-    height: 200px;
+    /* width: 1440px; */
+    /* height: 200px; */
     background-color: rgb(235, 235, 235);
     position: relative;
     border-top: 5px solid rgb(255, 64, 64);
@@ -189,4 +189,46 @@ footer>div>p {
     font-size: 18px;
     color: gray;
     line-height: 25px;
+}
+
+@media only screen and (max-width:480px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding: 35px;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    header>form {
+        padding: 20px;
+    }
+
+    .giohang {
+        position: absolute;
+        transform: scale(0.5);
+        padding: 0;
+    }
+
+    .dangnhap {
+        position: absolute;
+        transform: scale(0.5);
+        padding: 0;
+    }
+    .dangky{
+        position: absolute;
+    }
 }
